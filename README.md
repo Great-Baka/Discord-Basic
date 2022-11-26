@@ -31,7 +31,15 @@ On the left you will see an button called ```Bot```, press that and you will see
 
 **_WARNING! There is some very important information here that you do not want to share to anyone_**
 
+To save time later, if you scroll down a little you will see some switches. If you wish your bot to be public then leave that switched on otherwise switch it off(which I recommend until you have finished the bot to a point that you feel can be released), there are 3 others called: 
+* Presence IntentServer 
+* Members IntentMessage 
+* Content Intent
+Switch all 3 of them on.
 
+Before we can carry on, let`s switch over to discord and set up our test enviornment. On the left side of the screen, as you will know, are the servers and groups you are currently in. If you`re like me and is in a fair amount of servers, the scroll to the very bottom until you see ```add a server```. from there press ```Create My Own```>```For me and my friends```. Name and add a photo, or dont (you can change it all later).
 
+![image](https://user-images.githubusercontent.com/119116489/204102771-4e038406-6769-4f0d-b221-c185be71b13b.png)
 
+Ok, now that we have created our server let`s go back to the ```developer portal```
 
