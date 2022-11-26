@@ -19,6 +19,8 @@ Once you`ve done that, you should see something similar to this:
 
 You will need to click ```New Application```, in which you will be greeted with a pop-up asking you to name the application, give it a name and click the promt to say you agree with the Terms of Service and Policy then click create.
 
+![image](https://user-images.githubusercontent.com/119116489/204101173-88259fe8-4cc7-4828-8f83-b53854281c65.png)
+
 
 
 
