@@ -79,8 +79,56 @@ Now we will get the token as we haven't got it yet. Go back to the `dev portal` 
 ![image](https://user-images.githubusercontent.com/119116489/204106185-16066179-67fa-439c-80b8-40a0985c9c1b.png)
 ![image](https://user-images.githubusercontent.com/119116489/204106284-d4388338-efcd-4b88-985c-fc6716806eff.png)
 
+Now open up the index.ts/index.js and lets import our dependancies. For this we only need 3, as this isn't going to be a big bot. We need to import discordJS, Intents and dotenv.
 
+in `typescript` it you would import them like this:
+```ts
+import DiscordJS, { Intents } from 'discord.js'
+import dotenv from 'dotenv'
+import 'dotenv/config'
+```
+in `javascript` you would import them like this:
+```js
+const Discord = require('discord.js');
+const { Client, Intents} = require('discord.js');
+const dontenv = require('dotenv');
+dontenv.config();
+```
 
+In this tutorial, thats the only real difference between typescript and javascript, the rest of the code will work in either format, but I will be sticking to index.ts. Ok now that we have imported what we need, we now to to start a discord client and set-up our intents. Note that intents have changed in discordJS v14, and if you have installed the right discordjs version, then you shouldn't get any errors. If you do, check to make sure that you have `DiscordJS V13` or go back onto the `dev portal` and make sure your bot has the intents ticked. But if you have followed this then you shouldn't have an error with the intents.
 
-# UNFINISHED, WILL CONTINUE AFTER SOME SLEEP
+To create the client we will write this:
 
+```ts
+const client = new DiscordJS.Client({
+    intents: [
+        Intents.FLAGS.GUILDS,
+        Intents.FLAGS.GUILD_MESSAGES,
+    ],
+})
+```
+
+Now we have the client made, we will now create an async function to write to the console when the bot starts, despite there being other uses the main one is to indicated that your bot is running. The code for this is:
+
+```ts
+client.on('ready', async () => {
+    console.log('Yawns *stretches*..... I dont want to wake up just yet')
+})
+```
+You can change the message in the console log to anything you want.
+
+If we start the bot now with either: `ts-node index.ts` (for typescript) or `node index.js` (for javascript), it will fail to start and throw you some errors. This is because we haven't logged our bot in. In order to do this, at the bottom of the file we will write 
+```ts
+client.login(process.env.TOKEN)
+```
+This fetches the token you put in the `.env`. This is to keep your bot token secure and cant be read, and it saves you from hard coding in the token making it very easy for people to steal.
+
+now if you try and running your bot, it should display the console log and your bot will come online in discord. But its pretty much just an empty shell, like a deer in headlights it's alive but no one is home. Now we will add some functionality, in this we won't be dwelling with slash commands but will in another repo (whenever I get around to doing it). We need the bot to act on something through a message command, so pretty much the bot looks at every message sent and if the message sent is identicle to a command we have wrote then it'll do something.
+
+we start with this (and make sure it is above the ```ts client.login()``` as that needs to always be at the bottom, after all the functionality):
+
+```ts
+client.on('messageCreate', (message) => {
+ 
+})
+```
