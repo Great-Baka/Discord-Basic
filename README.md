@@ -154,3 +154,9 @@ And to just send it in chat, you would use:
 ```ts
 message.channel.send('Pong!')
 ```
+Now if you run your bot and go back onto discord and type `!ping` you'll get a response from your bot saying `pong!`.
+
+# Conclusion
+And there you have it, a really simple discord bot. From there you can expand your bot and make more commands. If it is a small bot then a few nested if statements won't hurt, but if you plan on making a big bot then it would be better to use a command handler and have each command as a seperate file. 
+
+I plan on making more stuff like this in the future, and will hopefully cover slash commands and making a simple command handler. Thank you all for reading and hope that you have learnt something.
