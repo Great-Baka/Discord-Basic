@@ -3,11 +3,11 @@ In this repo, I am writing a basic tutorial in how to create a discord bot. In t
 will be using discordJS v13.10.2, and will be using both javascript and typescript in windows 10.
 
 # Index
-*[Useful-links](https://github.com/Great-Baka/Discord-Basic#useful-links)*
-*[Requirements](https://github.com/Great-Baka/Discord-Basic#Requirements)*
-*[Initialisation](https://github.com/Great-Baka/Discord-Basic#Initialisation)*
-*[Coding your bot](https://github.com/Great-Baka/Discord-Basic#Coding-your-bot)*
-*[Useful-links](https://github.com/Great-Baka/Discord-Basic#Conclusion)*
+* [Useful-links](https://github.com/Great-Baka/Discord-Basic#useful-links)*
+* [Requirements](https://github.com/Great-Baka/Discord-Basic#Requirements)*
+* [Initialisation](https://github.com/Great-Baka/Discord-Basic#Initialisation)*
+* [Coding your bot](https://github.com/Great-Baka/Discord-Basic#Coding-your-bot)*
+* [Useful-links](https://github.com/Great-Baka/Discord-Basic#Conclusion)*
 
 # Useful-Links
 * Discord Dev Portal: https://discord.com/developers/applications
