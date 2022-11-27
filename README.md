@@ -7,7 +7,7 @@ will be using discordJS v13.10.2, and will be using both javascript and typescri
 * [Requirements](https://github.com/Great-Baka/Discord-Basic#Requirements)
 * [Initialisation](https://github.com/Great-Baka/Discord-Basic#Initialisation)
 * [Coding your bot](https://github.com/Great-Baka/Discord-Basic#Coding-your-bot)
-* [Useful-links](https://github.com/Great-Baka/Discord-Basic#Conclusion)
+* [Conclusion](https://github.com/Great-Baka/Discord-Basic#Conclusion)
 
 # Useful-Links
 * Discord Dev Portal: https://discord.com/developers/applications
