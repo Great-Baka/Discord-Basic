@@ -125,10 +125,32 @@ This fetches the token you put in the `.env`. This is to keep your bot token sec
 
 now if you try and running your bot, it should display the console log and your bot will come online in discord. But its pretty much just an empty shell, like a deer in headlights it's alive but no one is home. Now we will add some functionality, in this we won't be dwelling with slash commands but will in another repo (whenever I get around to doing it). We need the bot to act on something through a message command, so pretty much the bot looks at every message sent and if the message sent is identicle to a command we have wrote then it'll do something.
 
-we start with this (and make sure it is above the ```ts client.login()``` as that needs to always be at the bottom, after all the functionality):
+we start with this (and make sure it is above the `client.login()` as that needs to always be at the bottom, after all the functionality):
 
 ```ts
 client.on('messageCreate', (message) => {
  
 })
+```
+now we need to create some commands the bot will watch for and do when found, we will create a cliche `ping pong` command. Now to make sure that the bot doesn't respond to itself we will add:
+```ts
+if(message.author.bot) return;
+```
+Now we will create another if statement checking that the message sent is a command:
+```ts
+if (message.content === '!ping' || message.content === '! ping') {
+       
+}
+```
+
+The `message.content` is the message sent by a user in discord, despite not needing to check if there is a space between the `! ping` I personally like to add this as I know some people prefer having a space after a prefix (which is what the `!` is).
+
+now we will add the response from the bot, there's a few ways of doing this. You could either have the bot reply to the user who activated the command, or simply send it in chat.
+If you wish to reply to the user, you would simply use:
+```ts
+message.reply('Pong!')
+```
+And to just send it in chat, you would use:
+```ts
+message.channel.send('Pong!')
 ```
