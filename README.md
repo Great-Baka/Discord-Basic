@@ -96,7 +96,7 @@ import 'dotenv/config'
 ```
 in `javascript` you would import them like this:
 ```js
-const Discord = require('discord.js');
+const DiscordJS = require('discord.js');
 const { Client, Intents} = require('discord.js');
 const dontenv = require('dotenv');
 dontenv.config();
