@@ -1,0 +1,16 @@
+{
+  "name": "bot-name",
+  "version": "1.0.0",
+  "description": "This is your npm package, what you can do is download this, then on a cmd go to where you saved this file and type 'npm install' then it should download all the dependencies you need so then you do not need to do the 'npm init -y' command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.10.2",
+    "dotenv": "^16.0.3"
+  }
+}
