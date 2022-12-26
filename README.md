@@ -42,6 +42,7 @@ To save time later, if you scroll down a little you will see some switches. If y
 * Presence IntentServer 
 * Members IntentMessage 
 * Content Intent
+
 Switch all 3 of them on.
 
 Before we can carry on, let's switch over to discord and set up our test enviornment. On the left side of the screen, as you will know, are the servers and groups you are currently in. If you're like me and is in a fair amount of servers, the scroll to the very bottom until you see `add a server`. from there press `Create My Own`>`For me and my friends`. Name and add a photo, or dont (you can change it all later).
